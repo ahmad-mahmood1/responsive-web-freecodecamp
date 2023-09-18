@@ -158,6 +158,7 @@ li {
     align-items: center;
     text-align: center;
     width: 33%;
+    max-width:300px;
     margin: 10px;
     border: 1px solid #000;
     border-radius: 3px;
@@ -216,4 +217,50 @@ footer span {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+}
+
+@media (max-width:800px){
+    #pricing{
+        flex-direction:column;
+    }
+    .product {
+        width:100%;
+        margin:0 auto;
+        margin-bottom:10px;
+        
+    }
+}
+
+
+
+@media (max-width:600px){
+    #hero {
+        margin-top:130px;
+    }
+
+
+   header, #nav-bar ul {
+        flex-direction:column;
+        align-items:center;
+        width:100%
+
+    }
+
+    #nav-bar li {
+        margin-top:5px;
+    }
+
+    .logo{
+        margin-bottom:10px;
+    }
+
+    #features .icon {
+        display:none;
+    }
+
+    .grid{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
 }
